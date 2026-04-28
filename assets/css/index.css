@@ -1,0 +1,183 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILO GERAL */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 100vh;
+    background: rgb(226, 230, 255);
+    line-height: 1.6;
+    color: #2b2928;
+
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(rgba(3, 44, 115,1), rgba(161, 195, 255, 0.2));
+    background-color: rgb(3, 44, 115);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav h1{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 1rem;
+    font-size: 2rem;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    
+}
+
+.header nav ul{
+    list-style: none;
+    display: flex;
+    margin-right: 1rem;
+    gap: 15px;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: light;
+}
+
+.header img{
+    width: 28px;
+    
+}
+
+.header span{
+    color:#fca311;
+    font-weight: bold;
+}
+
+.banner {
+    height: 23rem;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2), rgba(226, 230, 255,0.999)), url("../../imagens/bg.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+.banner a{
+    max-width: 10%;
+    background-color: #fca311;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.banner h2{
+    font-size: 3.6rem;
+    margin-bottom: 10px;
+}
+
+.banner p{
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+
+/* ÍCONE HAMBURGUER ESCONDIDO */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+.main-container {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.main-container h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* CARDS */
+.section-destino{
+    display: flex;
+    justify-content: center;
+}
+
+
+.cards-destino {
+    width: 300px;
+    margin: 15px;
+    vertical-align: top;
+    background-color: #fca311;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cards-destino img {
+    width: 100%;
+    display: block;
+}
+
+section div h3 {
+    margin: 15px 0 10px;
+}
+
+section div p,
+section div span {
+    padding: 0 15px 15px;
+    display: block;
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(rgba(3, 44, 115,1), rgba(161, 195, 255, 0.2));
+    background-color: rgb(3, 44, 115);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .header nav ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav h1 {
+        font-size: 2rem;
+        flex: 1;
+    }
+
+    .banner {
+        background-position: 75% center;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 1280px){
+        .banner {
+        background-position: center;
+        background-size: cover;
+    }
+}

@@ -49,6 +49,16 @@ body {
     gap: 15px;
 }
 
+.header nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+.header nav ul img{
+    margin-right: 5px;
+    width: 20px;
+    
+}
 .header nav a {
     text-decoration: none;
     color: white;
@@ -74,7 +84,7 @@ body {
 
 .banner {
     height: 23rem;
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2), rgba(226, 230, 255,0.999)), url("../../imagens/bg.png") no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2), rgba(226, 230, 255,0.999)), url("../imagens/bg.png") no-repeat;
     background-size: 100%;
     background-position: center;
     color: white;

@@ -23,13 +23,16 @@
 
 .cards-div {
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cards-destino {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    flex: 1 1 300px;
+    max-width: 350px;
     margin: 15px;
     vertical-align: top;
     background-color: #ffffff;

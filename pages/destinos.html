@@ -3,83 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/global.css">
-	<link rel="stylesheet" href="../assets/css/index.css">
+    <title>Destinos | Horizonte Turismo</title>
+    
+    <!-- Fontes do Google (Mantendo o padrão do Index) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>projeto-final</title>
+    
+    <!-- Link para ícones (como as estrelas e a lupa) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS (Global e Específico) -->
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/destinos.css">
 </head>
 <body>
 
-<!-- HEADER -->
+    <!-- HEADER -->
     <header class="header">
         <nav>
             <h1>Horizonte Turismo</h1>
             <ul>
-                <li><img src="../assets/images/icons/home.svg"><a href="../index.html">Home</a></li> <span>|</span>
-                <li><img src="../assets/images/icons/Destinos.svg"><a href="../pages/destinos.html">Destinos</a></li><span>|</span>
-                <li><img src="../assets/images/icons/Serviços.svg"><a href="../pages/servicos.html">Serviços</a></li><span>|</span>
-                <li><img src="../assets/images/icons/Contato.svg"><a href="../pages/sobrenos.html">Contato</a></li>
+                <li><img src="../assets/images/icons/home.svg" alt=""><a href="../index.html">Home</a></li><span>|</span>
+                <li><img src="../assets/images/icons/Destinos.svg" alt=""><a href="destinos.html">Destinos</a></li><span>|</span>
+                <li><img src="../assets/images/icons/Serviços.svg" alt=""><a href="servicos.html">Serviços</a></li><span>|</span>
+                <li><img src="../assets/images/icons/Contato.svg" alt=""><a href="sobrenos.html">Contato</a></li>
             </ul>
-		 <div class="menu-toggle">☰</div>
+            <div class="menu-toggle">☰</div>
         </nav>
     </header>
 
-    <section class="banner">
-        <h2>Vá além dos horizontes</h2>
-        <p>Descubra destinos incríveis e viva experiências inesquecíveis</p>
+    <!-- BANNER HERO -->
+    <section class="banner-hero">
+        <div class="banner-content">
+            <h2>Descubra seus<br>próximos destinos</h2>
+            <p>Pacotes incríveis para o mundo todo</p>
+            
+            <!-- Paginação -->
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
     </section>
 
+    <!-- CONTEÚDO PRINCIPAL -->
     <main class="main-container">
 
+        <div class="section-header">
+            <h2>Todos os Destinos</h2>
+        </div>
 
-        
+        <!-- FILTROS (Pills) -->
+        <div class="filtros">
+            <button class="filtro-btn active">Todos</button>
+            <button class="filtro-btn">Europa</button>
+            <button class="filtro-btn">Ásia</button>
+            <button class="filtro-btn">América</button>
+            <button class="filtro-btn">Promoções</button> 
+        </div>
+
+        <!-- GRID DE CARDS -->
+        <section class="destinos-grid">
+            
+            <!-- CARD 1: PARIS -->
+            <div class="card-destino">
+                <div class="card-img-wrapper">
+                    <img src="../assets/images/paris.jpg" alt="Torre Eiffel em Paris">
+                </div>
+                <div class="card-info">
+                    <h3>Paris</h3>
+                    <div class="avaliacao">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i> 
+                    </div>
+                    <p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus.</p>
+                    <div class="card-footer">
+                        <div class="preco-info">
+                            <span>A partir de</span>
+                            <strong>R$ x.xxx</strong>
+                        </div>
+                        <a href="#" class="btn-ver-pacotes">Ver pacotes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2: TOKYO -->
+            <div class="card-destino">
+                <div class="card-img-wrapper">
+                    <img src="../assets/images/tokyo.jpg" alt="Rua tradicional em Tokyo">
+                </div>
+                <div class="card-info">
+                    <h3>Tokyo</h3>
+                    <div class="avaliacao">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus.</p>
+                    <div class="card-footer">
+                        <div class="preco-info">
+                            <span>A partir de</span>
+                            <strong>R$ x.xxx</strong>
+                        </div>
+                        <a href="#" class="btn-ver-pacotes">Ver pacotes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3: RIO DE JANEIRO -->
+            <div class="card-destino">
+                <div class="card-img-wrapper">
+                    <img src="../assets/images/rio.jpg" alt="Praia no Rio de Janeiro">
+                </div>
+                <div class="card-info">
+                    <h3>Rio de Janeiro</h3>
+                    <div class="avaliacao">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus.</p>
+                    <div class="card-footer">
+                        <div class="preco-info">
+                            <span>A partir de</span>
+                            <strong>R$ x.xxx</strong>
+                        </div>
+                        <a href="#" class="btn-ver-pacotes">Ver pacotes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4: AARJA -->
+            <div class="card-destino">
+                <div class="card-img-wrapper">
+                    <img src="../assets/images/placeholder1.jpg" alt="Destino Aarja">
+                </div>
+                <div class="card-info">
+                    <h3>Aarja</h3>
+                    <div class="avaliacao">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus.</p>
+                    <div class="card-footer">
+                        <div class="preco-info">
+                            <span>A partir de</span>
+                            <strong>R$ x.xxx</strong>
+                        </div>
+                        <a href="#" class="btn-ver-pacotes">Ver pacotes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 5: RIO DE JANEIRO (Cópia) -->
+            <div class="card-destino">
+                <div class="card-img-wrapper">
+                    <img src="../assets/images/placeholder2.jpg" alt="Destino Praia">
+                </div>
+                <div class="card-info">
+                    <h3>Rio de Janeiro</h3>
+                    <div class="avaliacao">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus.</p>
+                    <div class="card-footer">
+                        <div class="preco-info">
+                            <span>A partir de</span>
+                            <strong>R$ x.xxx</strong>
+                        </div>
+                        <a href="#" class="btn-ver-pacotes">Ver pacotes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 6: LISBON -->
+            <div class="card-destino">
+                <div class="card-img-wrapper">
+                    <img src="../assets/images/lisbon.jpg" alt="Costa em Lisboa">
+                </div>
+                <div class="card-info">
+                    <h3>Lisbon</h3>
+                    <div class="avaliacao">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus.</p>
+                    <div class="card-footer">
+                        <div class="preco-info">
+                            <span>A partir de</span>
+                            <strong>R$ x.xxx</strong>
+                        </div>
+                        <a href="#" class="btn-ver-pacotes">Ver pacotes</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     </main>
-        <!-- FOOTER -->
-<footer>
-    <div class="footer-container">
 
-        <div class="footer-col">
-            <h3>Horizonte Turismo</h3>
-            <p>É uma agência especializada em viagens, passeios e experiências inesquecíveis.</p>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Horizonte Turismo</h3>
+                <p>É uma agência especializada em viagens, passeios e experiências inesquecíveis.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Serviços</h3>
+                <ul>
+                    <li><a href="#">Passagens</a></li>
+                    <li><a href="#">Hospedagem</a></li>
+                    <li><a href="#">Pacotes</a></li>
+                    <li><a href="#">Seguro Viagem</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Destinos</h3>
+                <ul>
+                    <li><a href="#">Paris</a></li>
+                    <li><a href="#">Tokyo</a></li>
+                    <li><a href="#">Rio de Janeiro</a></li>
+                    <li><a href="#">Lisboa</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contato</h3>
+                <p>📞 +55 (21) 99999-9999</p>
+                <p>✉ contato@horizonteturismo.com</p>
+            </div>
         </div>
 
-        <div class="footer-col">
-            <h3>Serviços</h3>
-            <ul>
-                <li><a href="#">Passagens</a></li>
-                <li><a href="#">Hospedagem</a></li>
-                <li><a href="#">Pacotes</a></li>
-                <li><a href="#">Seguro Viagem</a></li>
-            </ul>
-        </div>
+        <p class="copyright">
+            Copyright © 2026 Horizonte Turismo™. Todos os direitos reservados.
+        </p>
+    </footer>
 
-        <div class="footer-col">
-            <h3>Destinos</h3>
-            <ul>
-                <li><a href="#">Paris</a></li>
-                <li><a href="#">Tokyo</a></li>
-                <li><a href="#">Rio de Janeiro</a></li>
-                <li><a href="#">Lisboa</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-            <h3>Contato</h3>
-            <p>📞 (21) 99999-9999</p>
-            <p>✉ contato@horizonteturismo.com</p>
-        </div>
-
-    </div>
-
-    <p class="copyright">
-        Copyright © 2026 Horizonte Turismo™. Todos os direitos reservados.
-    </p>
-</footer>
-
-	<script type="module" src="js/index.js"></script>
+    <!-- Corrigido o caminho do JS para puxar da raiz -->
+    <script type="module" src="../js/index.js"></script>
 
 </body>
-
 </html>

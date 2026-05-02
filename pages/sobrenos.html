@@ -4,82 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/global.css">
-	<link rel="stylesheet" href="../assets/css/index.css">
+    <!-- Crie este arquivo contato.css na sua pasta -->
+    <link rel="stylesheet" href="../assets/css/contato.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>projeto-final</title>
+    <title>Contato | Horizonte Turismo</title>
 </head>
 <body>
 
-<!-- HEADER -->
+    <!-- HEADER -->
     <header class="header">
         <nav>
             <h1>Horizonte Turismo</h1>
             <ul>
-                <li><img src="../assets/images/icons/home.svg"><a href="../index.html">Home</a></li> <span>|</span>
-                <li><img src="../assets/images/icons/Destinos.svg"><a href="../pages/destinos.html">Destinos</a></li><span>|</span>
-                <li><img src="../assets/images/icons/Serviços.svg"><a href="../pages/servicos.html">Serviços</a></li><span>|</span>
-                <li><img src="../assets/images/icons/Contato.svg"><a href="../pages/sobrenos.html">Contato</a></li>
+                <li><img src="../assets/images/icons/home.svg" alt="Home"><a href="../index.html">Home</a></li> <span>|</span>
+                <li><img src="../assets/images/icons/Destinos.svg" alt="Destinos"><a href="../pages/destinos.html">Destinos</a></li><span>|</span>
+                <li><img src="../assets/images/icons/Serviços.svg" alt="Serviços"><a href="../pages/servicos.html">Serviços</a></li><span>|</span>
+                <li><img src="../assets/images/icons/Contato.svg" alt="Contato"><a href="../pages/sobrenos.html">Contato</a></li>
             </ul>
-		 <div class="menu-toggle">☰</div>
+         <div class="menu-toggle">☰</div>
         </nav>
     </header>
 
     <section class="banner">
-        <h2>Vá além dos horizontes</h2>
-        <p>Descubra destinos incríveis e viva experiências inesquecíveis</p>
+        <h2>Fale Conosco</h2>
+        <p>Estamos prontos para planejar a sua próxima grande aventura</p>
     </section>
 
+    <!-- CONTEÚDO DA PÁGINA DE CONTATO -->
     <main class="main-container">
+        <section class="contato-section">
+            <div class="contato-content">
+                
+                <!-- Informações da Agência -->
+                <div class="contato-info">
+                    <h3>Nossos Canais</h3>
+                    <p class="info-texto">Tem alguma dúvida ou quer personalizar um pacote? Entre em contato direto com a nossa equipe.</p>
+                    
+                    <div class="info-item">
+                        <img src="../assets/images/icons/Contato.svg" alt="Telefone">
+                        <p>+55 (21) 99999-9999</p>
+                    </div>
+                    <div class="info-item">
+                        <img src="../assets/images/icons/Serviços.svg" alt="E-mail">
+                        <p>contato@horizonteturismo.com</p>
+                    </div>
+                    <div class="info-item">
+                        <img src="../assets/images/icons/Destinos.svg" alt="Endereço">
+                        <p>Av. das Américas, 1000 - Rio de Janeiro, RJ</p>
+                    </div>
+                </div>
 
+                <!-- Formulário de Contato -->
+                <div class="contato-form">
+                    <form action="#" method="POST">
+                        <div class="input-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="assunto">Assunto</label>
+                            <input type="text" id="assunto" name="assunto" placeholder="Ex: Dúvida sobre pacote" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como podemos te ajudar?" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                    </form>
+                </div>
 
-        
+            </div>
+        </section>
     </main>
-        <!-- FOOTER -->
-<footer>
-    <div class="footer-container">
 
-        <div class="footer-col">
-            <h3>Horizonte Turismo</h3>
-            <p>É uma agência especializada em viagens, passeios e experiências inesquecíveis.</p>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Horizonte Turismo</h3>
+                <p>É uma agência especializada em viagens, passeios e experiências inesquecíveis.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Serviços</h3>
+                <ul>
+                    <li><a href="#">Passagens</a></li>
+                    <li><a href="#">Hospedagem</a></li>
+                    <li><a href="#">Pacotes</a></li>
+                    <li><a href="#">Seguro Viagem</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Destinos</h3>
+                <ul>
+                    <li><a href="#">Paris</a></li>
+                    <li><a href="#">Tokyo</a></li>
+                    <li><a href="#">Rio de Janeiro</a></li>
+                    <li><a href="#">Lisboa</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contato</h3>
+                <p>📞 (21) 99999-9999</p>
+                <p>✉ contato@horizonteturismo.com</p>
+            </div>
         </div>
 
-        <div class="footer-col">
-            <h3>Serviços</h3>
-            <ul>
-                <li><a href="#">Passagens</a></li>
-                <li><a href="#">Hospedagem</a></li>
-                <li><a href="#">Pacotes</a></li>
-                <li><a href="#">Seguro Viagem</a></li>
-            </ul>
-        </div>
+        <p class="copyright">
+            Copyright © 2026 Horizonte Turismo™. Todos os direitos reservados.
+        </p>
+    </footer>
 
-        <div class="footer-col">
-            <h3>Destinos</h3>
-            <ul>
-                <li><a href="#">Paris</a></li>
-                <li><a href="#">Tokyo</a></li>
-                <li><a href="#">Rio de Janeiro</a></li>
-                <li><a href="#">Lisboa</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-            <h3>Contato</h3>
-            <p>📞 (21) 99999-9999</p>
-            <p>✉ contato@horizonteturismo.com</p>
-        </div>
-
-    </div>
-
-    <p class="copyright">
-        Copyright © 2026 Horizonte Turismo™. Todos os direitos reservados.
-    </p>
-</footer>
-
-	<script type="module" src="js/index.js"></script>
+    <script type="module" src="../js/index.js"></script>
 
 </body>
-
 </html>

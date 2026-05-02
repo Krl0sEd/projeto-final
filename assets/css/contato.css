@@ -1,0 +1,130 @@
+/* =========================================
+   PÁGINA: CONTATO (contato.css)
+========================================= */
+
+.contato-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px 80px 20px;
+}
+
+.contato-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* --- COLUNA DE INFORMAÇÕES --- */
+.contato-info {
+    flex: 1;
+    min-width: 300px;
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contato-info h3 {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.info-texto {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.info-item img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+}
+
+.info-item p {
+    margin: 0;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+/* --- COLUNA DO FORMULÁRIO --- */
+.contato-form {
+    flex: 1.5;
+    min-width: 320px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+    font-size: 0.95rem;
+}
+
+.input-group input,
+.input-group textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: #3b5bfb;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(59, 91, 251, 0.15);
+}
+
+.btn-enviar {
+    background-color: #3b5bfb;
+    color: #ffffff;
+    border: none;
+    padding: 16px 30px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #2a44d1;
+    transform: translateY(-2px);
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .contato-content {
+        flex-direction: column;
+    }
+    
+    .contato-info, .contato-form {
+        padding: 30px 20px;
+    }
+}
